@@ -5,6 +5,7 @@ import com.utilizandobeans.entidades.Autor;
 import com.utilizandobeans.entidades.Livro;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+import org.springframework.context.support.AbstractApplicationContext;
 
 import java.util.Scanner;
 
@@ -27,5 +28,7 @@ public class App {
         livro.setCodigo(sc.nextLine());
 
         livro.exibir();
+
+        ((AbstractApplicationContext) factory).close();
     }
 }
