@@ -10,6 +10,7 @@ public class ServicoPagamento {
     @Autowired
     private ServicoEntrega servicoEntrega;
 
+
     public double precoFinal(double custo, String estado){
         return custo + servicoEntrega.entrega(estado) + taxaDeServico.taxa(custo);
     }
