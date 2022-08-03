@@ -6,6 +6,7 @@ public class EnviarEmails {
     }
 
     public static EnviarEmails obterDadosEmail(){
+
         return new EnviarEmails("Chamado", "jucamartnis86@gmail.com", "emBuscaDaVaga");
     }
 
