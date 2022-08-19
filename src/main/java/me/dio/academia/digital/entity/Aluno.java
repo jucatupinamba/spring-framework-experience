@@ -5,6 +5,7 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import javax.persistence.*;
 import java.time.LocalDate;
@@ -31,6 +32,9 @@ public class Aluno {
   private String bairro;
 
   private LocalDate dataDeNascimento;
+  @OneToOne(cascade = CascadeType.ALL)
+  @JoinColumn(name = "matricula_id")
+  private Matricula matricula;
 
   @OneToMany(mappedBy = "aluno", cascade = CascadeType.REMOVE , fetch = FetchType.LAZY)
   @JsonIgnore
