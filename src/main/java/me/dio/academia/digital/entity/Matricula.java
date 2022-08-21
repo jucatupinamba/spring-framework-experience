@@ -21,4 +21,5 @@ public class Matricula {
   private Aluno aluno;
 
   private LocalDateTime dataDaMatricula = LocalDateTime.now();
+
 }
