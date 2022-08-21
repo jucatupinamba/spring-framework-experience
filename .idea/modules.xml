@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+<<<<<<< HEAD
       <module fileurl="file://$PROJECT_DIR$/../academia-digital.iml" filepath="$PROJECT_DIR$/../academia-digital.iml" />
+=======
+      <module fileurl="file://$PROJECT_DIR$/.idea/Spring Framework Experience.iml" filepath="$PROJECT_DIR$/.idea/Spring Framework Experience.iml" />
+>>>>>>> bc0d24ddb3cbab087b65269ec170afb3c7e904e2
     </modules>
   </component>
 </project>
