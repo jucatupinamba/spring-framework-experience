@@ -14,7 +14,10 @@ target/
 .sts4-cache
 
 ### IntelliJ IDEA ###
+<<<<<<< Updated upstream
 *.idea
+=======
+>>>>>>> Stashed changes
 *.iws
 *.iml
 *.ipr
